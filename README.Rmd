@@ -63,13 +63,13 @@ female_PL <- nrow(metadata[metadata$SP=="PMG" & metadata$Sex == "F",])
 ```{r} 
 library(plyr)
 metadata  <- arrange(metadata, ET)
-head(metadata)
+head(metadata, n=5)
 ```
  
   *  *Sort the table by the weight of each animal*
 ```{r} 
 metadata <- metadata[order(metadata$Weight), ]
-head(metadata)
+head(metadata, n=5)
 ```
   
   *  *The `Station` column indicates where the mice were sampled. Where were the most mice captured?*
